@@ -1,54 +1,36 @@
-site: Michael Jelbart
+# site settings
+title: Michael Jelbart
+subtitle:
+email:
+description: Empowering XR experiences for social and environmental kindness
+baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+author:
+street_address:
+city:
+state:
+zip_code:
+country:
+phone:
 
-collections:
-  pages:
-    output: true
-    permalink: /:name
-  posts:
-    output: true
-    permalink: /blog/:slug
-  projects:
-    output: true
-    permalink: /project/:slug
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 6
 
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
+# social settings
+500px_url:
+facebook_url:
+github_url:
+gitlab_url:
+googleplus_url: 
+instagram_url:
+linkedin_url: https://www.linkedin.com/in/michael-j-jelbart/
+pinterest_url:
+slack_url:
+twitter_url:
 
+# build settings
 markdown: kramdown
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  
 sass:
   style: compressed
-
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-
-paginate: 6
-paginate_path: "/blog/page:num/"
-  
